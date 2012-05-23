@@ -16,8 +16,8 @@ start () {
     echo -n "Starting solr..."
 
     # start daemon                                                                                                        
-    daemon --chdir='/data/solr/taskfree-solr-3.4' --command "java -jar start.jar" --respawn --output=/var/log/solr/solr.l\
-og --name=solr --verbose
+    daemon --chdir='/mnt/solr' --command "java -jar start.jar" --respawn --output=/var/log/solr/solr.l\
+og --name=solr --verbose --make-pidfile --pidfile /var/run/solr.pid
 
     RETVAL=$?
     if [ $RETVAL = 0 ]
