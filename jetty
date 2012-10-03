@@ -1,5 +1,5 @@
 JAVA_HOME=/usr/lib/jvm/java-1.6.0-openjdk
 JAVA_OPTIONS="-Dsolr.solr.home=/mnt/solr/solr $JAVA_OPTIONS"
-JETTY_HOME=/mnt/solr
+JETTY_HOME=/mnt/data/solr
 JETTY_USER=app
-JETTY_LOGS=/mnt/solr/logs
+JETTY_LOGS=/mnt/data/solr/logs
