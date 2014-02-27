@@ -344,7 +344,7 @@ fi
 #####################################################
 if [ -z "$CONFIGS" ] 
 then
-    CONFIGS="${JETTY_HOME}/etc/jetty-logging.xml ${JETTY_HOME}/etc/jetty.xml"
+    CONFIGS="${JETTY_HOME}/etc/jetty.xml"
 fi
 
 
@@ -484,15 +484,31 @@ RUN_CMD="$JAVA $RUN_ARGS"
 # Comment these out after you're happy with what 
 # the script is doing.
 #####################################################
-#echo "JETTY_HOME     =  $JETTY_HOME"
-#echo "JETTY_CONF     =  $JETTY_CONF"
-#echo "JETTY_RUN      =  $JETTY_RUN"
-#echo "JETTY_PID      =  $JETTY_PID"
-#echo "JETTY_ARGS     =  $JETTY_ARGS"
-#echo "CONFIGS        =  $CONFIGS"
-#echo "JAVA_OPTIONS   =  $JAVA_OPTIONS"
-#echo "JAVA           =  $JAVA"
+echo "JETTY_HOME     =  $JETTY_HOME"
+echo "JETTY_CONF     =  $JETTY_CONF"
+echo "JETTY_RUN      =  $JETTY_RUN"
+echo "JETTY_PID      =  $JETTY_PID"
+echo "JETTY_ARGS     =  $JETTY_ARGS"
+echo "CONFIGS        =  $CONFIGS"
+echo "JAVA_OPTIONS   =  $JAVA_OPTIONS"
+echo "JAVA           =  $JAVA"
 
+
+
+echo  "--------------------------------"
+echo "Checking arguments to Jetty: "
+echo "JETTY_HOME     =  $JETTY_HOME"
+echo "JETTY_CONF     =  $JETTY_CONF"
+echo "JETTY_RUN      =  $JETTY_RUN"
+echo "JETTY_PID      =  $JETTY_PID"
+echo "JETTY_PORT     =  $JETTY_PORT"
+echo "JETTY_LOGS     =  $JETTY_LOGS"
+echo "CONFIGS        =  $CONFIGS"
+echo "JAVA_OPTIONS   =  $JAVA_OPTIONS"
+echo "JAVA           =  $JAVA"
+echo "CLASSPATH      =  $CLASSPATH"
+echo "RUN_CMD        =  $RUN_CMD"
+echo  "--------------------------------"
 
 ##################################################
 # Do the action
